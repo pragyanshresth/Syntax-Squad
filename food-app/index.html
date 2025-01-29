@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fdfdfd;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 2px solid #e01111;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header button {
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .food-grid {
+            display: flex;
+            justify-content: center; /* Center items */
+            gap: 10px; /* Space between items */
+            flex-wrap: nowrap; /* Prevent wrapping */
+        } 
+        .food-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            width: 100%; /* Make it responsive */
+            max-width: 250px; /* Set max width */
+            margin: auto; /* Center it */
+        }
+
+        .food-item img {
+            width: 100%; /* Make the image take full width */
+            height: 150px; /* Set a fixed height */
+            object-fit: cover; /* Ensure image fits nicely */
+            border-radius: 8px;
+        }
+
+
+        .food-item p {
+            margin: 4px ;
+            font-size: 14px;
+        }
+
+        .view-more {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #e60f0f;
+            font-weight: bold;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .feedback {
+            margin-bottom: 24px;
+        }
+
+        .feedback input,
+        .feedback textarea,
+        .feedback button {
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .feedback button {
+            background-color: #cc0d0d;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 16px;
+            background-color: #f8d7da;
+            font-size: 12px;
+            color: #555;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #ce1010;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="customerpage">
+        <!-- Header -->
+        <header>
+            <img src="techspire.png" alt="Logo">
+                
+            <img src="user.jpg">    
+    
+        </header>
+
+        <!-- Non-veg Section -->
+        <div class="section">
+            <div class="view-more">
+                <h2>Non-veg</h2>
+                <span>View More &rarr;</span>
+            </div>
+            <div class="food-grid">
+                <div class="food-item">
+                    <img src="momo.jpg" alt="Momos">
+                    <p>MoMos</p>
+                    <p>Rs. 130</p>
+                </div>
+                <div class="food-item">
+                    <img src="chicken fried rice.jpg" alt="Fried Rice">
+                    <p>Fried Rice</p>
+                    <p>Rs. 130</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegan Section -->
+        <div class="section">
+            <div class="view-more">
+                <h2>Vegan</h2>
+                <span>View More &rarr;</span>
+            </div>
+            <div class="food-grid">
+                <div class="food-item">
+                    <img src="veg momo.jpg" alt="Momos">
+                    <p>MoMos</p>
+                    <p>Rs. 130</p>
+                </div>
+                <div class="food-item">
+                    <img src="chowmien.jpg" alt="Chowmein">
+                    <p>Chowmein</p>
+                    <p>Rs. 120</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Section -->
+        <div class="feedback">
+            <h2>Feedback</h2>
+            <input type="email" placeholder="Email">
+            <textarea rows="4" placeholder="Remarks"></textarea>
+            <button>Submit</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            Contact us @ <a href="mailto:support@designhub.edu">support@designhub.edu</a>
+        </footer>
+    </div>
+</body>
+</html>
